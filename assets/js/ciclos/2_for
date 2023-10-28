@@ -1,0 +1,26 @@
+// 1- Ciclo FOR - Tres partes:
+//// 1- Donde se inicializa la variable - ( let i = 0;
+//// 2- Condición WHILE sea verdadera - (i < heroes.length;
+//// < heroes.length HACE IGUAL QUE <= heroes.length - 1 (Se utiliza el primero aunque hacen lo mismo)
+//// Si colocamos For dentro de otro For cambiamos el nombre de la variable
+//// i, j, etc., es nombre standard de variables, pero no es obligatorio
+//// 3- El incrementador - i++ )
+
+const heroes = ['Batman', 'Superman', 'Mujer Maravilla', 'Aquaman'];
+
+console.warn('For tradicional');
+for( let i = 0; i < heroes.length; i++ ) {
+    console.log( heroes[i] );
+}
+
+// 2- Ciclo FOR IN
+console.warn('For in');
+for( let i in heroes ) {
+    console.log( heroes[i] );
+}
+
+// 3- Ciclo FOR OF
+console.warn('For of');
+for( let heroe of heroes ){
+    console.log( heroe );
+}
